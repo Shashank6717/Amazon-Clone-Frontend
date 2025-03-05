@@ -64,7 +64,7 @@ This project helped me learn:
 
 ## ⏱️ Development Time
 
-This project took me several weeks to complete as I was learning HTML and CSS from scratch. The process included:
+This project was completed in 2023, marking my first step into web development. The process included:
 
 - Learning HTML basics
 - Understanding CSS properties
@@ -99,4 +99,3 @@ Made with ❤️ by Shashank Dornala
 ## 🔗 Links
 
 - [GitHub Repository](https://github.com/Shashank6717/Amazon-Clone-Frontend)
-
