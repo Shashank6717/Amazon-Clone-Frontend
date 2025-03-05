@@ -1,0 +1,669 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: #e3e6e6;
+}
+
+.nav-bar {
+  background-color: #0f1111;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.logo-div {
+  height: 50px;
+  width: 110px;
+}
+.logo-div:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.border {
+  padding: 6.5px;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.border:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.reallogo {
+  background-image: url("assets/Screenshot\ 2024-02-25\ 135817.png");
+  background-size: 115px;
+  height: 50px;
+  width: 100%;
+}
+.first {
+  margin-left: 15px;
+  font-size: 0.75rem;
+  color: #cccccc;
+}
+.second {
+  color: white;
+  font-size: 100%;
+}
+.searchbox {
+  display: flex;
+  flex: 1;
+  max-width: 620px;
+  margin: 0 10px;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: white;
+}
+.searchbox input {
+  height: 41px;
+  width: 100%;
+  border: none;
+  padding: 0 10px;
+  font-size: 1rem;
+  outline: none;
+}
+.searchbox input:focus {
+  background-color: #f8f8f8;
+}
+select {
+  height: 41px;
+  width: 50px;
+  background-color: #f3f3f3;
+  border: none;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  padding: 0 5px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  color: #111;
+}
+select:hover {
+  background-color: #e6e6e6;
+}
+.searchlogo {
+  background-color: #febd69;
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.searchlogo:hover {
+  background-color: #f3a847;
+}
+.searchlogo i {
+  color: #111;
+  font-size: 1.1rem;
+}
+.nani:hover {
+  cursor: pointer;
+}
+/* .searchbox:hover{
+    border: 2px solid orange;
+    border-radius: 0.25rem;
+} */
+.add-2 {
+  display: flex;
+}
+.accounts {
+  font-weight: 700;
+  text-decoration: none;
+  color: white;
+}
+.sign {
+  color: white;
+  font-size: 0.7rem;
+}
+.cart i {
+  font-size: 30px;
+}
+.cart {
+  color: white;
+}
+
+.panel {
+  height: 40px;
+  background-color: #222f3d;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.all-text {
+  text-decoration: none;
+  color: white;
+}
+.panelops p {
+  display: inline;
+  color: white;
+  margin-left: 20px;
+}
+.panelops {
+  width: 60%;
+  font-size: 0.88rem;
+}
+.shop {
+  height: 40px;
+}
+.all {
+  color: white;
+}
+.all i {
+  color: #cccccc;
+}
+.content-img {
+  background-image: url("assets/51DWgNo1fdL._SX3000_.jpg");
+  height: 350px;
+  background-size: cover;
+}
+.box {
+  width: 290px;
+  height: 420px;
+  background-color: white;
+  padding: 20px 0px 15px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #e3e6e6;
+  padding: 15px;
+  gap: 15px;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.boxcontent {
+  margin: 0.6rem 1rem 1rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.boxcontent h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.box:hover .boxcontent h2 {
+  color: #007185;
+}
+
+.box1img {
+  height: 300px;
+  background-size: cover;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  transition: transform 0.5s ease;
+}
+
+.box:hover .box1img {
+  transform: scale(1.05);
+}
+
+.boxcontent a {
+  color: #007185;
+  text-decoration: none;
+  font-size: 14px;
+  position: relative;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.boxcontent a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #007185;
+  transition: width 0.3s ease;
+}
+
+.box:hover .boxcontent a::after {
+  width: 100%;
+}
+
+.special {
+  color: #007185;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.special:hover {
+  color: #c45500;
+  text-decoration: none;
+}
+
+.video {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e3e6e6;
+}
+.videofile {
+  background-image: url("assets/video.jpeg");
+  height: 250px;
+  width: 970px;
+  background-size: cover;
+}
+.border1:hover {
+  padding: 6.5px;
+  border: 1.25px solid rgb(0, 0, 0);
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+.deals {
+  padding: 10px 20px;
+  height: 350px;
+  width: 100%;
+  background-color: white;
+  margin: 1rem 1rem;
+}
+.dealimg {
+  display: flex;
+  justify-content: space-evenly;
+}
+.deal1 {
+  height: 250px;
+  width: 200px;
+  margin-top: 40px;
+}
+.img1 {
+  background-size: cover;
+}
+.deals h2 {
+  margin-right: 20px;
+}
+.wtf {
+  margin-top: 10px;
+}
+.deals a {
+  text-decoration: none;
+  color: #007185;
+  font-size: 13px;
+}
+.special:hover {
+  color: orange;
+  text-decoration: underline;
+}
+footer {
+  margin-top: 10px;
+}
+.panel1 {
+  height: 50px;
+  background-color: #37475a;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.panel1 a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.panel2 {
+  background-color: #222f3d;
+  height: 250px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding-top: 50px;
+  border-bottom: 1px solid #cccccc;
+}
+.panel2 a {
+  display: block;
+  text-decoration: none;
+  color: #cccccc;
+  font-size: medium;
+  margin-top: 12px;
+}
+.panel2 p {
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+}
+.panel3 {
+  background-color: #131921;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logopanel {
+  background-image: url("assets/Screenshot\ 2024-02-25\ 135817.png");
+  background-size: cover;
+  height: 50px;
+  width: 150px;
+}
+.panel4 {
+  background-color: #131921;
+  height: 60px;
+  padding-top: 25px;
+}
+.page {
+  font-size: 0.7rem;
+  text-align: center;
+}
+.page a {
+  text-decoration: none;
+  color: #cccccc;
+  margin-left: 10px;
+}
+.copyright {
+  font-size: 0.7rem;
+  text-align: center;
+  color: #cccccc;
+}
+.underline:hover {
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: #cccccc;
+}
+.p:hover {
+  text-decoration: solid;
+}
+.lol {
+  width: 100%;
+}
+.op1,
+.op2,
+.op3,
+.op4,
+.op5 {
+  display: inline;
+  color: white;
+  margin-left: 20px;
+}
+.underline {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1200px) {
+  .searchbox {
+    max-width: 500px;
+  }
+
+  .box {
+    width: 260px;
+    height: 400px;
+  }
+
+  .box1img {
+    height: 280px;
+  }
+
+  .videofile {
+    width: 90%;
+    height: 220px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .nav-bar {
+    padding: 0 10px;
+  }
+
+  .searchbox {
+    max-width: 400px;
+  }
+
+  .content {
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .box {
+    width: 240px;
+    height: 380px;
+  }
+
+  .box1img {
+    height: 260px;
+  }
+
+  .dealimg {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .deal1 {
+    width: 180px;
+    height: 220px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-bar {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px;
+  }
+
+  .logo-div {
+    order: 1;
+    margin-bottom: 10px;
+  }
+
+  .searchbox {
+    order: 2;
+    max-width: 100%;
+    margin: 10px 0;
+  }
+
+  .address,
+  .cart {
+    order: 3;
+  }
+
+  .panel {
+    position: relative;
+    height: 40px;
+    padding: 0 15px;
+  }
+
+  .all {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+  }
+
+  .panelops {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #222f3d;
+    padding: 10px 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .panelops.active {
+    display: block;
+  }
+
+  .panelops p {
+    display: block;
+    padding: 8px 15px;
+    margin: 0;
+    transition: background-color 0.3s ease;
+  }
+
+  .panelops p:hover {
+    background-color: #37475a;
+  }
+
+  .shop {
+    display: none;
+  }
+
+  .content-img {
+    height: 250px;
+  }
+
+  .box {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    min-height: 350px;
+  }
+
+  .box1img {
+    height: 240px;
+  }
+
+  .video {
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .videofile {
+    height: 200px;
+  }
+
+  .deals {
+    height: auto;
+    padding: 20px;
+  }
+
+  .dealimg {
+    justify-content: center;
+  }
+
+  .deal1 {
+    width: 160px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .nav-bar {
+    justify-content: center;
+  }
+
+  .address,
+  .cart {
+    margin: 5px 10px;
+  }
+
+  .panel2 {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .panel2 ul {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .panel2 a {
+    font-size: 14px;
+  }
+
+  .panel2 p {
+    font-size: 16px;
+  }
+
+  .box {
+    max-width: 100%;
+  }
+
+  .box1img {
+    height: 220px;
+  }
+
+  .boxcontent h2 {
+    font-size: 1rem;
+  }
+
+  .videofile {
+    height: 180px;
+  }
+
+  .deal1 {
+    width: 140px;
+    height: 180px;
+  }
+
+  .page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .page a {
+    margin: 0;
+  }
+
+  .panel {
+    padding: 0 10px;
+  }
+
+  .panelops p {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Fix for very small screens */
+@media screen and (max-width: 320px) {
+  .nav-bar {
+    padding: 5px;
+  }
+
+  .logo-div {
+    width: 90px;
+  }
+
+  .reallogo {
+    background-size: 90px;
+  }
+
+  .searchbox input {
+    font-size: 0.9rem;
+  }
+
+  .box {
+    min-height: 320px;
+  }
+
+  .box1img {
+    height: 200px;
+  }
+
+  .boxcontent h2 {
+    font-size: 0.9rem;
+  }
+
+  .deal1 {
+    width: 120px;
+    height: 160px;
+  }
+}
