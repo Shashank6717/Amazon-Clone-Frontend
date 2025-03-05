@@ -94,9 +94,9 @@ This is a learning project created to understand web development fundamentals. I
 
 ---
 
-Made with ❤️ by Shashank Kumar
+Made with ❤️ by Shashank Dornala
 
 ## 🔗 Links
 
 - [GitHub Repository](https://github.com/Shashank6717/Amazon-Clone-Frontend)
-- [Live Demo](https://shashank6717.github.io/Amazon-Clone-Frontend/)
+
